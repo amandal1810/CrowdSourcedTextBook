@@ -5,10 +5,10 @@
 
 $conn_error_msg="Error in connecting to Database!";
 
-$mysql_server='localhost';
-$mysql_user='root';
-$mysql_pass='';
-$mysql_db='intern';
+$mysql_server='mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/';
+$mysql_user='adminpP41mvb';
+$mysql_pass='4GtbCF64yQre';
+$mysql_db='abhi';
 
 $link=mysqli_connect($mysql_server,$mysql_user,$mysql_pass,$mysql_db);//connecting to the database
 
